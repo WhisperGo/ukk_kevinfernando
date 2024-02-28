@@ -475,3 +475,57 @@ CRITICAL - 2024-02-28 14:07:06 --> Call to a member function getResult() on bool
 #4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
 #6 {main}
+ERROR - 2024-02-28 15:04:27 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 15:04:27 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 15:17:12 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 15:17:12 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 15:17:18 --> Unknown column 'buku.id_buku' in 'where clause'
+CRITICAL - 2024-02-28 15:17:18 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(319): App\Models\M_buku->getBukuKeluarById('1')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->info_stok_keluar('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 15:21:56 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 15:21:56 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 15:22:26 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 15:22:26 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 15:23:24 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 15:23:24 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
