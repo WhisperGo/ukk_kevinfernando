@@ -198,7 +198,6 @@ class Buku extends BaseController
 
     // --------------------------------- STOK BUKU MASUK -----------------------------------------
 
-
     public function menu_stok($id)
     {
         if (session()->get('level') == 1 || session()->get('level') == 2) {

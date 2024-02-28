@@ -421,3 +421,57 @@ CRITICAL - 2024-02-28 11:53:21 --> Call to a member function getResult() on bool
 #4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
 #6 {main}
+ERROR - 2024-02-28 13:33:14 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 13:33:14 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 13:33:18 --> Unknown column 'buku.id_buku' in 'where clause'
+CRITICAL - 2024-02-28 13:33:18 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(208): App\Models\M_buku->getBukuMasukById('1')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->menu_stok('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 13:34:29 --> Unknown column 'buku.id_buku' in 'where clause'
+CRITICAL - 2024-02-28 13:34:29 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(208): App\Models\M_buku->getBukuMasukById('1')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->menu_stok('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 13:36:47 --> Unknown column 'buku.buku_id' in 'where clause'
+CRITICAL - 2024-02-28 13:36:47 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(207): App\Models\M_buku->getBukuMasukById('1')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->menu_stok('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 14:05:13 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 14:05:13 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 14:07:06 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 14:07:06 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}

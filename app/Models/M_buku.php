@@ -80,8 +80,8 @@ class M_buku extends Model
     {
     	return $this->db->table('buku_masuk')
     	->select('buku_masuk.*, buku.*') 
-    	->join('buku', 'buku.id_buku = buku_masuk.buku')
-    	->where('buku.id_buku', $id)
+    	->join('buku', 'buku.BukuID = buku_masuk.buku_id')
+    	->where('buku.BukuID', $id)
     	->get()
     	->getResult();
     }
