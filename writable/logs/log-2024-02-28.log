@@ -1,0 +1,423 @@
+ERROR - 2024-02-28 10:07:57 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:07:57 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:08:26 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:08:26 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:09:45 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:09:45 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:10:57 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:10:57 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:10:59 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:10:59 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:11:15 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:11:15 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:12:05 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:12:05 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:12:05 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:12:05 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\User.php(20): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\User->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:12:06 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:12:06 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:12:19 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:12:19 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:12:22 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:12:22 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:12:58 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:12:58 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:13:14 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:13:14 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:13:56 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:13:56 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:14:48 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:14:48 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:17:02 --> Error connecting to the database: Unknown database 'perpustkaan_kevin'
+CRITICAL - 2024-02-28 10:17:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'perpustkaan_kevin'
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Models\M_login.php(18): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Login.php(83): App\Models\M_login->getLoginWithPassword('user', 'Admin', '1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Login->aksi_login()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:17:27 --> Error connecting to the database: Unknown database 'perpustkaan_kevin'
+CRITICAL - 2024-02-28 10:17:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'perpustkaan_kevin'
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Models\M_login.php(18): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Login.php(83): App\Models\M_login->getLoginWithPassword('user', 'Admin', '1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Login->aksi_login()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:18:38 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:18:38 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:18:45 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:18:45 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+ERROR - 2024-02-28 10:21:38 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2024-02-28 10:21:38 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(16): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+CRITICAL - 2024-02-28 10:25:30 --> Class 'App\Controllers\M_permainan' not found
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+CRITICAL - 2024-02-28 10:34:11 --> Call to undefined method App\Models\M_buku::hitungsemua
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(14): CodeIgniter\Model->__call('hitungsemua', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-28 10:35:51 --> Call to undefined method App\Models\M_user::hitungsemua
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(17): CodeIgniter\Model->__call('hitungsemua', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-28 10:36:12 --> Call to undefined method App\Models\M_peminjaman::hitungSemuaHariIni
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(20): CodeIgniter\Model->__call('hitungSemuaHari...', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-28 10:49:52 --> Class 'App\Models\M_kategori_buku' not found
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Kategori_buku->index()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori_buku))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+CRITICAL - 2024-02-28 10:51:29 --> Class 'App\Models\M_kategori_buku' not found
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Kategori_buku->index()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori_buku))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+ERROR - 2024-02-28 10:51:40 --> Table 'perpustakaan_kevin.kategori_buku' doesn't exist
+CRITICAL - 2024-02-28 10:51:40 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Kategori_buku.php(13): App\Models\M_kategoribuku->tampil('kategori_buku')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Kategori_buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori_buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 10:52:45 --> Table 'perpustakaan_kevin.kategori_buku' doesn't exist
+CRITICAL - 2024-02-28 10:52:45 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Kategori_buku.php(13): App\Models\M_kategoribuku->tampil('kategori_buku')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Kategori_buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori_buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 10:53:32 --> Table 'perpustakaan_kevin.kategori_buku' doesn't exist
+CRITICAL - 2024-02-28 10:53:32 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Kategori_buku.php(13): App\Models\M_kategoribuku->tampil('kategori_buku')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Kategori_buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori_buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-28 11:01:36 --> Invalid file: hopeui/KategoriBuku/view.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/Kategori...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/Kategori...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\KategoriBuku.php(20): view('hopeui/Kategori...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\KategoriBuku->index()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBuku))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+ERROR - 2024-02-28 11:06:09 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 11:06:09 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(15): App\Models\M_buku->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:06:46 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 11:06:46 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(15): App\Models\M_buku->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:08:15 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 11:08:15 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(15): App\Models\M_buku->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:28:51 --> Table 'perpustakaan_kevin.kategori' doesn't exist
+CRITICAL - 2024-02-28 11:28:51 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(14): App\Models\M_buku->tampilbuku()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:30:50 --> Table 'perpustakaan_kevin.kategori' doesn't exist
+CRITICAL - 2024-02-28 11:30:50 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(14): App\Models\M_buku->tampilbuku()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:32:46 --> Table 'perpustakaan_kevin.kategori' doesn't exist
+CRITICAL - 2024-02-28 11:32:46 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(14): App\Models\M_buku->tampilbuku()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-28 11:34:04 --> Too few arguments to function App\Models\M_buku::join3(), 3 passed in C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php on line 15 and exactly 5 expected
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(15): App\Models\M_buku->join3('buku', 'kategoribuku_re...', 'kategoribuku')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:35:01 --> Unknown column 'kategori.KategoriID' in 'on clause'
+CRITICAL - 2024-02-28 11:35:01 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(16): App\Models\M_buku->join3('buku', 'kategoribuku_re...', 'kategoribuku', 'buku.BukuID = k...', 'kategoribuku_re...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:36:26 --> Unknown column 'id_buku' in 'where clause'
+CRITICAL - 2024-02-28 11:36:26 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(108): App\Models\M_buku->getWhere('buku', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->edit('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:41:55 --> Unknown column 'id_buku' in 'where clause'
+ERROR - 2024-02-28 11:52:22 --> Unknown column 'buku.id_buku' in 'where clause'
+CRITICAL - 2024-02-28 11:52:22 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(208): App\Models\M_buku->getBukuMasukById('1')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->menu_stok('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-28 11:53:21 --> Unknown column 'buku.kategori_buku' in 'where clause'
+CRITICAL - 2024-02-28 11:53:21 --> Call to a member function getResult() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(18): App\Models\M_peminjaman->join2('buku', 'KategoriBuku', 'buku.KategoriBu...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->index()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
