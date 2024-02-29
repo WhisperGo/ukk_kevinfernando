@@ -8,11 +8,11 @@ $namalevel  = $db->table('user')->join('level', $on, 'left')->where('level.id_le
 $UserID = session()->get('id');
 $user = $db->table('user')->where('UserID', $UserID)->get()->getRow();
 
-// if (!empty($user->foto)) {
-//   $foto = base_url('images/' . $user->foto);
-// } else {
-//   $foto = base_url('images/default.png');
-// }
+if (!empty($user->foto)) {
+  $foto = base_url('profile/' . $user->foto);
+} else {
+  $foto = base_url('profile/default.png');
+}
 
 $builder = $db->table('website');
 $logo = $builder->select('logo_website')
@@ -56,8 +56,8 @@ $logo = $builder->select('logo_website')
         <li class="nav-item dropdown">
           <a class="py-0 nav-link d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <!-- <img src="../assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded"> -->
-            <img src="<?=base_url('profile/default.png')?>" class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded">
-            <div class="caption ms-3 d-md-block ">
+            <img src="<?=$foto?>" class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded">
+            <div class="caption ms-3 d-md-block">
               <h6 class="mb-0 caption-title"><?= session()->get('username') ?></h6>
               <p class="mb-0 caption-sub-title"><?=$namalevel->nama_level?></p>
             </div>
@@ -66,6 +66,7 @@ $logo = $builder->select('logo_website')
         <!-- <li><a class="dropdown-item" href="../dashboard/app/user-profile.html">Profile</a></li>
         <li><a class="dropdown-item" href="../dashboard/app/user-privacy-setting.html">Privacy Setting</a></li>
         <li><hr class="dropdown-divider"></li> -->
+        <li><a class="dropdown-item" href="<?= base_url('user/reset_password_user/' . session()->get('id')) ?>">Reset Password</a></li>
         <li><a class="dropdown-item" href="<?=base_url('login/log_out')?>">Logout</a></li>
       </ul>
     </li>

@@ -1,2 +1,0 @@
-- Info detail buku
-- Username tidak boleh sama

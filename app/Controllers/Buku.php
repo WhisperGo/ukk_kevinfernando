@@ -15,6 +15,57 @@ class Buku extends BaseController
             $on2 = 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID';
             $data['jojo'] = $model->join3('buku', 'kategoribuku_relasi', 'kategoribuku', $on, $on2);
 
+            $data['title'] = 'Menu Buku';
+            $data['desc'] = 'Anda dapat memfilter Data Buku di Menu ini.';
+            $data['subtitle'] = 'Filter Buku';
+
+            $data['kategori'] = $model->tampil('kategoribuku');
+
+            echo view('hopeui/partial/header', $data);
+            echo view('hopeui/partial/side_menu');
+            echo view('hopeui/partial/top_menu');
+            echo view('hopeui/buku/menu_buku', $data);
+            echo view('hopeui/partial/footer');
+        } else {
+            return redirect()->to('/');
+        }
+    }
+
+    public function processForm()
+    {
+        if ($this->request->getMethod() === 'post') {
+        // Ambil kategori yang dipilih dari form
+            $kategoriID = $this->request->getPost('kategori');
+
+        // Periksa level pengguna
+            $level = session()->get('level');
+            if ($level == 1 || $level == 2) {
+            // Jika level adalah 1 atau 2, redirect ke public function view
+                return redirect()->to(base_url("buku/view/$kategoriID"));
+            } elseif ($level == 3) {
+            // Jika level adalah 3, redirect ke public function peminjam
+                return redirect()->to(base_url("buku/peminjam/$kategoriID"));
+            } else {
+            // Jika level tidak valid, lakukan tindakan yang sesuai, misalnya, redirect ke halaman lain atau tampilkan pesan kesalahan
+                return redirect()->to('/');
+            }
+        }
+    }
+
+    public function view($kategoriID = null)
+    {
+        if (session()->get('level') == 1 || session()->get('level') == 2) {
+            if ($kategoriID) {
+                $model = new M_buku();
+                $data['jojo'] = $model->getBooksByCategory($kategoriID);
+            } else {
+                // Jika kategori tidak dipilih, tampilkan semua data buku
+                $model = new M_buku();
+                $on = 'buku.BukuID = kategoribuku_relasi.BukuID';
+                $on2 = 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID';
+                $data['jojo'] = $model->join3('buku', 'kategoribuku_relasi', 'kategoribuku', $on, $on2);
+            }
+
             $data['title'] = 'Data Buku';
             $data['desc'] = 'Anda dapat melihat Data Buku di Menu ini.';
 
@@ -22,6 +73,28 @@ class Buku extends BaseController
             echo view('hopeui/partial/side_menu');
             echo view('hopeui/partial/top_menu');
             echo view('hopeui/buku/view', $data);
+            echo view('hopeui/partial/footer');
+        } else {
+            return redirect()->to('/');
+        }
+    }
+
+    public function detail_buku($id)
+    {
+        if (session()->get('level') == 1 || session()->get('level') == 2  || session()->get('level') == 3) {
+            $model = new M_buku();
+
+            $on = 'buku.BukuID = kategoribuku_relasi.BukuID';
+            $on2 = 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID';
+            $data['jojo'] = $model->join3id('buku', 'kategoribuku_relasi', 'kategoribuku', $on, $on2, $id);
+
+            $data['title'] = 'Detail Buku';
+            $data['desc'] = 'Anda dapat melihat Detail Buku di Menu ini.';
+
+            echo view('hopeui/partial/header', $data);
+            echo view('hopeui/partial/side_menu');
+            echo view('hopeui/partial/top_menu');
+            echo view('hopeui/buku/view_detail', $data);
             echo view('hopeui/partial/footer');
         } else {
             return redirect()->to('/');
@@ -94,7 +167,7 @@ class Buku extends BaseController
             );
             $model->simpan('kategoribuku_relasi', $data2);
 
-            return redirect()->to('buku');
+            return redirect()->to('buku/view/' . $e);
         } else {
             return redirect()->to('/');
         }
@@ -248,7 +321,7 @@ class Buku extends BaseController
         if (session()->get('level') == 1 || session()->get('level') == 2) {
             $model=new M_buku();
 
-            $where=array('id_buku'=>$id);
+            $where=array('BukuID'=>$id);
             $data['jojo']=$model->getWhere('buku',$where);
 
             $data['title'] = 'Data Stok Buku Masuk';
@@ -270,11 +343,13 @@ class Buku extends BaseController
         if (session()->get('level') == 1 || session()->get('level') == 2) {
             $a = $this->request->getPost('id');
             $b = $this->request->getPost('stok_buku');
+            $c = $this->request->getPost('deskripsi');
 
             // Data yang akan disimpan
             $data1 = array(
-                'buku' => $a,
+                'buku_id' => $a,
                 'stok_buku_masuk' => $b,
+                'deskripsi' => $c
             );
 
             // Simpan data ke dalam database
@@ -294,7 +369,7 @@ class Buku extends BaseController
 
         // Mengambil ID buku terkait dari stok buku masuk yang akan dihapus
             $stok_masuk = $model->getBukuMasukByIdBukuMasuk($id);
-            $id_buku = $stok_masuk->buku;
+            $id_buku = $stok_masuk->buku_id;
 
         // Membuat kondisi untuk menghapus stok buku masuk
             $where = array('id_buku_masuk' => $id);
@@ -337,7 +412,7 @@ class Buku extends BaseController
         if (session()->get('level') == 1 || session()->get('level') == 2) {
             $model=new M_buku();
 
-            $where=array('id_buku'=>$id);
+            $where=array('BukuID'=>$id);
             $data['jojo']=$model->getWhere('buku',$where);
 
             $data['title'] = 'Data Stok Buku Keluar';
@@ -359,11 +434,13 @@ class Buku extends BaseController
         if (session()->get('level') == 1 || session()->get('level') == 2) {
             $a = $this->request->getPost('id');
             $b = $this->request->getPost('stok_buku');
+            $c = $this->request->getPost('deskripsi');
 
             // Data yang akan disimpan
             $data1 = array(
-                'buku' => $a,
+                'buku_id' => $a,
                 'stok_buku_keluar' => $b,
+                'deskripsi'=>$c
             );
 
             // Simpan data ke dalam database
@@ -382,8 +459,8 @@ class Buku extends BaseController
         $model = new M_buku();
 
         // Mengambil ID buku terkait dari stok buku masuk yang akan dihapus
-        $stok_keluar = $model->getBukuMasukByIdBukuKeluar($id);
-        $id_buku = $stok_keluar->buku;
+        $stok_keluar = $model->getBukuKeluarByIdBukuMasuk($id);
+        $id_buku = $stok_keluar->buku_id;
 
         // Membuat kondisi untuk menghapus stok buku masuk
         $where = array('id_buku_keluar' => $id);
@@ -399,19 +476,28 @@ class Buku extends BaseController
 
     // -------------------------------------- PEMINJAM --------------------------------------------
 
-public function peminjam()
+public function peminjam($kategoriID = null)
 {
     if (session()->get('level') == 3) {
         $model = new M_buku(); // Gunakan model M_buku
 
         $idUser = session()->get('id');
 
-        $on = 'buku.KategoriBuku=KategoriBuku.KategoriID';
-        $data['jojo'] = $model->join2('buku', 'KategoriBuku', $on); // Ubah cara Anda mengambil data sesuai kebutuhan
+        if ($kategoriID) {
+            // Jika kategori dipilih, ambil data buku sesuai dengan kategori tersebut
+            $data['jojo'] = $model->getBooksByCategory($kategoriID);
+        } else {
+            // Jika kategori tidak dipilih, tampilkan semua data buku
+            $on = 'buku.BukuID = kategoribuku_relasi.BukuID';
+            $on2 = 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID';
+            $data['jojo'] = $model->join3('buku', 'kategoribuku_relasi', 'kategoribuku', $on, $on2);
+        }
 
         // Tambahkan informasi apakah buku disukai atau tidak ke dalam data yang akan dikirimkan ke view
-        foreach ($data['jojo'] as $riz) {
-            $riz->isLiked = $model->isLiked($riz->id_buku, $idUser);
+        if (!empty($data['jojo'])) { // Periksa apakah data buku ditemukan atau tidak
+            foreach ($data['jojo'] as $riz) {
+                $riz->isLiked = $model->isLiked($riz->BukuID, $idUser);
+            }
         }
 
         $data['title'] = 'Data Buku';
@@ -431,17 +517,16 @@ public function aksi_tambah_koleksi($id)
 { 
     if(session()->get('level') == 3) {
         $model = new M_buku();
-
         $idUser = session()->get('id');
 
             // Periksa apakah buku sudah ada dalam koleksi pengguna atau belum
         if (!$model->isLiked($id, $idUser)) {
             // Jika belum, tambahkan buku ke dalam koleksi
             $data1 = array(
-                'buku' => $id,
-                'user' => $idUser
+                'UserID' => $idUser,
+                'BukuID' => $id
             );
-            $model->simpan('koleksi_buku', $data1);
+            $model->simpan('koleksipribadi', $data1);
         } else {
             // Jika sudah, hapus buku dari koleksi
             $model->hapusLike($id, $idUser);

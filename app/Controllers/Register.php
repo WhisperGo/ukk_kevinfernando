@@ -9,31 +9,54 @@ class Register extends BaseController
     {
         $model=new M_user();
 
-        $data['title']='Register';
+        $data['title']='Registrasi Akun';
+        $data['desc']='Anda akan diarahkan ke halaman login setelah register.'; 
+        $data['subtitle'] = 'Form Registrasi Akun';
+
+        $data['level']=$model->tampil('level');
 
         echo view('hopeui/partial_login/header', $data);
+        echo view('hopeui/partial/top_menu_special', $data);
         echo view('hopeui/auth/register', $data);
         echo view('hopeui/partial_login/footer');
     }
 
     public function aksi_register()
     { 
-        $u = $this->request->getPost('username');
-        $p = $this->request->getPost('password');
+        $a = $this->request->getPost('username');
+        $b = $this->request->getPost('password');
+        $c = $this->request->getPost('email');
+        $d = $this->request->getPost('nama_lengkap');
+        $e = $this->request->getPost('alamat');
 
-        // Tambahkan validasi jika field kosong
-        if (empty($u) && empty($p)) {
-            session()->setFlashdata('error', 'Username dan password tidak boleh kosong');
+        $foto_profil = $this->request->getFile('foto_profil');
+
+        if ($foto_profil->isValid() && !$foto_profil->hasMoved()) {
+            $ext = $foto_profil->getClientExtension();
+
+            $imageName = 'profile_' . session()->get('id') . '_' . time() . '.' . $ext;
+
+            $foto_profil->move('profile', $imageName);
+        } else {
+            $imageName = 'default.png';
+        }
+
+        // Validasi Register
+        if ($a == $d) {
+            session()->setFlashdata('error', 'Username dan Nama Lengkap tidak boleh sama.');
             return redirect()->to('register');
         }
 
-        if (empty($u)) {
-            session()->setFlashdata('error', 'Username tidak boleh kosong');
+        $model = new M_user();
+        $user_exists = $model->where('Username', $a)->first();
+        if ($user_exists) {
+            session()->setFlashdata('error', 'Username sudah tidak tersedia.');
             return redirect()->to('register');
         }
 
-        if (empty($p)) {
-            session()->setFlashdata('error', 'Password tidak boleh kosong');
+        $email_exists = $model->where('Email', $c)->first();
+        if ($email_exists) {
+            session()->setFlashdata('error', 'Email ini sudah pernah terdaftar.');
             return redirect()->to('register');
         }
 
@@ -45,7 +68,7 @@ class Register extends BaseController
             return redirect()->to('register');
         }
 
-            // Verifikasi CAPTCHA menggunakan Google reCAPTCHA API
+        // Verifikasi CAPTCHA menggunakan Google reCAPTCHA API
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $data = [
             'secret' => '6LcEfuojAAAAAHEty4frYz3AtlZ39sx7OsvHVT5K',
@@ -69,16 +92,25 @@ class Register extends BaseController
 
         // Data yang akan disimpan
         $data1 = array(
-            'username' => $u,
-            'password' => md5($p),
+            'Username' => $a,
+            'Password' => md5($b),
+            'Email' => $c,
+            'NamaLengkap' => $d,
+            'Alamat' => $e,
             'level' => 3,
-            'foto' => 'default.png',
+            'foto' => $imageName
         );
 
         // Simpan data ke dalam database
         $model = new M_user();
-        $model->simpan('user', $data1);
+        $isRegistered = $model->simpan('user', $data1);
 
-        return redirect()->to('user');
+        if ($isRegistered) {
+            session()->setFlashdata('success', 'Registrasi berhasil! Silakan login.');
+            return redirect()->to('/');
+        } else {
+            session()->setFlashdata('error', 'Registrasi gagal. Silakan coba lagi.');
+            return redirect()->to('register');
+        }
     }
 }

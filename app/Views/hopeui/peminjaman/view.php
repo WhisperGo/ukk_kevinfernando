@@ -9,10 +9,12 @@
                      <thead>
                         <tr>
                            <th>No.</th>
-                           <th>Judul Buku</th>
-                           <th>Cover Buku</th>
-                           <th>Kategori Buku</th>
-                           <th>Stok Buku</th>
+                           <th>Cover</th>
+                           <th>Judul</th>
+                           <th>Penulis</th>
+                           <th>Kategori</th>
+                           <th>Jumlah</th>
+                           <th>Status</th>
                            <th>Action</th>
                         </tr>
                      </thead>
@@ -21,23 +23,48 @@
                         <?php
                         $no=1;
                         foreach ($jojo as $riz) {
-                          ?>
-                          <tr>
-                            <td><?= $no++ ?></td>
-                            <td><?= $riz->judul_buku ?></td>
-                            <td>
-                             <a href="<?= base_url('cover/' . $riz->cover_buku) ?>" target="_blank">
-                              <img src="<?= base_url('cover/' . $riz->cover_buku) ?>" class="img-fluid" style="object-fit: cover; width: 95px; height: 140px;" alt="Cover Buku">
+                         ?>
+                         <tr>
+                          <td><?= $no++ ?></td>
+                          <td>
+                            <a href="<?= base_url('buku/detail_buku/' . $riz->BukuID) ?>">
+                              <img src="<?= base_url('cover/' . $riz->cover_buku) ?>" style="object-fit: cover; width: 95px; height: 140px;" alt="Cover Buku">
                            </a>
                         </td>
-                        <td><?= $riz->nama_kategori ?></td>
-                        <td><?= $riz->stok_buku ?> buah</td>
+                        <td><?= $riz->Judul ?></td>
+                        <td><?= $riz->Penulis ?></td>
+                        <td><?= $riz->NamaKategori ?></td>
+                        <td><?= $riz->stok_buku_peminjaman ?> buah</td>
                         <td>
-                           <a href="<?php echo base_url('peminjaman/menu_peminjaman/'. $riz->id_buku)?>" class="btn btn-success my-1"><i class="fa-duotone fa-retweet" style="color: #ffffff;"></i></a>
-                        </td>
-                     </tr>
-                  <?php } ?>
-               </tbody>
+                           <?php
+                           if ($riz->StatusPeminjaman == 0) {
+                             echo '<span class="badge rounded-pill bg-gray">Pending</span>';
+                          } elseif ($riz->StatusPeminjaman == 1) {
+                            echo '<span class="badge rounded-pill bg-danger">Dipinjam</span>';
+                         } elseif ($riz->StatusPeminjaman == 2) {
+                            echo '<span class="badge rounded-pill bg-success">Dikembalikan</span>';
+                         } elseif ($riz->StatusPeminjaman == 4) {
+                            echo '<span class="badge rounded-pill bg-gray">Tidak Diizinkan</span>';
+                         }
+                         ?>
+                      </td>
+                      <td>
+                       <?php if ($riz->StatusPeminjaman == 0): ?>
+                         <!-- Tombol untuk StatusPeminjaman == 0 -->
+                         <a href="<?php echo base_url('peminjaman/beri_izin/' . $riz->PeminjamanID) ?>" class="btn btn-warning my-1"><i class="fa-duotone fa-rotate"></i></a>
+                         <a href="<?php echo base_url('peminjaman/tidak_beri_izin/'. $riz->PeminjamanID)?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
+                      <?php elseif ($riz->StatusPeminjaman == 1): ?>
+                         <!-- Tombol untuk StatusPeminjaman == 1 -->
+                         <a href="<?php echo base_url('peminjaman/edit_status/'. $riz->PeminjamanID)?>" class="btn btn-success my-1"><i class="fa-regular fa-check-to-slot"></i></a>
+                      <?php elseif ($riz->StatusPeminjaman == 2): ?>
+
+                      <?php elseif ($riz->StatusPeminjaman == 4): ?>
+
+                      <?php endif; ?>
+                   </td>
+                </tr>
+             <?php } ?>
+          </tbody>
               <!--  <tfoot>
                   <tr>
                      <th>No.</th>

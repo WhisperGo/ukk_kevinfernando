@@ -57,53 +57,68 @@ $logo = $builder->select('logo_website')
 
     <!-- ------------------------------- MENU ADMIN ------------------------------------- -->
 
-  <?php if (session()->get('level')==1){ ?>
-    <div class="sidebar-body pt-0 data-scrollbar">
-      <div class="sidebar-list">
-        <!-- Sidebar Menu Start -->
-        <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
-          <li class="nav-item static-item">
-            <a class="nav-link static-item disabled" tabindex="-1">
-              <span class="default-icon">Home</span>
-              <!-- <span class="mini-icon">-</span> -->
-            </a>
-          </li>
+    <?php if (session()->get('level')==1){ ?>
+      <div class="sidebar-body pt-0 data-scrollbar">
+        <div class="sidebar-list">
+          <!-- Sidebar Menu Start -->
+          <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
+            <li class="nav-item static-item">
+              <a class="nav-link static-item disabled" tabindex="-1">
+                <span class="default-icon">Home</span>
+                <!-- <span class="mini-icon">-</span> -->
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link <?php if($uri->getSegment(1) == "dashboard"){echo "active";}?>" href="<?=base_url('dashboard')?>"><i class="faj-button fa-duotone fa-grid-2"></i><span class="item-name">Dashboard</span>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "dashboard"){echo "active";}?>" href="<?=base_url('dashboard')?>"><i class="faj-button fa-duotone fa-grid-2"></i><span class="item-name">Dashboard</span>
+              </a>
+            </li>
 
-          <li><hr class="hr-horizontal"></li>
-          <li class="nav-item static-item">
-            <a class="nav-link static-item disabled" tabindex="-1">
-              <span class="default-icon">Data Master</span>
-              <!-- <span class="mini-icon">-</span> -->
-            </a>
-          </li>
+            <li><hr class="hr-horizontal"></li>
+            <li class="nav-item static-item">
+              <a class="nav-link static-item disabled" tabindex="-1">
+                <span class="default-icon">Data Master</span>
+                <!-- <span class="mini-icon">-</span> -->
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link <?php if($uri->getSegment(1) == "user"){echo "active";}?>" href="<?=base_url('user')?>"><i class="fa-regular fa-users"></i><span class="item-name">Data User</span>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "user"){echo "active";}?>" href="<?=base_url('user')?>"><i class="fa-regular fa-users"></i><span class="item-name">Data User</span>
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link <?php if($uri->getSegment(1) == "KategoriBuku"){echo "active";}?>" href="<?=base_url('KategoriBuku')?>"><i class="fa-regular fa-list"></i><span class="item-name">Kategori Buku</span>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "data_level"){echo "active";}?>" href="<?=base_url('data_level')?>"><i class="fa-regular fa-layer-group"></i><span class="item-name">Data Level</span>
+              </a>
+            </li>
 
-          <li><hr class="hr-horizontal"></li>
-          <li class="nav-item static-item">
-            <a class="nav-link static-item disabled" tabindex="-1">
-              <span class="default-icon">Data Perpustakaan</span>
-              <!-- <span class="mini-icon">-</span> -->
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "data_website"){echo "active";}?>" href="<?=base_url('data_website')?>"><i class="fa-regular fa-globe"></i><span class="item-name">Data Website</span>
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link <?php if($uri->getSegment(1) == "buku"){echo "active";}?>" href="<?=base_url('buku')?>"><i class="fa-solid fa-books"></i><span class="item-name">Data Buku</span>
-            </a>
-          </li>
+            <li><hr class="hr-horizontal"></li>
+            <li class="nav-item static-item">
+              <a class="nav-link static-item disabled" tabindex="-1">
+                <span class="default-icon">Data Perpustakaan</span>
+                <!-- <span class="mini-icon">-</span> -->
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "KategoriBuku"){echo "active";}?>" href="<?=base_url('KategoriBuku')?>"><i class="fa-regular fa-list"></i><span class="item-name">Kategori Buku</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "durasi_peminjaman"){echo "active";}?>" href="<?=base_url('durasi_peminjaman')?>"><i class="fa-regular fa-clock"></i><span class="item-name">Durasi Peminjaman</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "buku"){echo "active";}?>" href="<?=base_url('buku')?>"><i class="fa-solid fa-books"></i><span class="item-name">Data Buku</span>
+              </a>
+            </li>
 
           <!-- <li class="nav-item">
             <a class="nav-link <?php if($uri->getSegment(1) == "buku_digital"){echo "active";}?>" href="<?=base_url('buku_digital')?>"><i class="fa-regular fa-book"></i><span class="item-name">Data Buku Digital</span>
@@ -124,9 +139,14 @@ $logo = $builder->select('logo_website')
           </li>
 
           <li class="nav-item">
-            <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan"){echo "active";}?>" href="<?=base_url('peminjaman/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Peminjaman</span>
+            <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan" && $uri->getSegment(1) !== "pengembalian"){echo "active";}?>" href="<?=base_url('peminjaman/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Peminjaman</span>
             </a>
           </li>
+
+          <li class="nav-item">
+          <a class="nav-link <?php if($uri->getSegment(1) == "pengembalian"){echo "active";}?>" href="<?=base_url('pengembalian/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Pengembalian</span>
+          </a>
+        </li>
 
           <li class="nav-item mb-5"></li>
 
@@ -195,6 +215,11 @@ $logo = $builder->select('logo_website')
           </a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan"){echo "active";}?>" href="<?=base_url('peminjaman/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Pengembalian</span>
+          </a>
+        </li>
+
         <li class="nav-item mb-5"></li>
 
       </ul>
@@ -232,7 +257,12 @@ $logo = $builder->select('logo_website')
         </li>
 
         <li class="nav-item">
-          <a class="nav-link <?php if($uri->getSegment(1) == "buku" && $uri->getSegment(2) == "peminjam"){echo "active";}?>" href="<?=base_url('buku/peminjam')?>"><i class="fa-duotone fa-arrow-right-arrow-left"></i><span class="item-name">Data Buku</span>
+          <a class="nav-link <?php if($uri->getSegment(1) == "peminjaman_peminjam"){echo "active";}?>" href="<?=base_url('peminjaman_peminjam')?>"><i class="fa-duotone fa-arrow-right-arrow-left"></i><span class="item-name">Data Peminjaman</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link <?php if($uri->getSegment(1) == "buku"){echo "active";}?>" href="<?=base_url('buku')?>"><i class="fa-solid fa-books"></i><span class="item-name">Data Buku</span>
           </a>
         </li>
 
@@ -242,7 +272,7 @@ $logo = $builder->select('logo_website')
         </li> -->
 
         <li class="nav-item">
-          <a class="nav-link <?php if($uri->getSegment(1) == "koleksi_buku"){echo "active";}?>" href="<?=base_url('koleksi_buku')?>"><i class="fa-duotone fa-album-collection"></i><span class="item-name">Koleksi Buku</span>
+          <a class="nav-link <?php if($uri->getSegment(1) == "koleksi_buku"){echo "active";}?>" href="<?=base_url('koleksi_buku')?>"><i class="fa-duotone fa-bookmark"></i><span class="item-name">Koleksi Buku</span>
           </a>
         </li>
 

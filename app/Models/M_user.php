@@ -13,7 +13,10 @@ class M_user extends Model
 
 	public function tampil($table1)	
 	{
-		return $this->db->table($table1)->get()->getResult();
+		return $this->db->table($table1)
+		->where('deleted_at', null)
+		->get()
+		->getResult();
 	}
 	public function simpan($table, $data)
 	{
@@ -36,6 +39,7 @@ class M_user extends Model
 		return $this->db->table($table1)
 		->join($table2, $on, 'left')
 		->where('user.deleted_at', null)
+		->orderBy('level', 'ASC')
 		->get()
 		->getResult();
 	}

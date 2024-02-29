@@ -41,15 +41,19 @@
                        <td><?php echo $riz->Alamat ?></td>
                        <td><?php echo $riz->nama_level ?></td>
                        <td>
+                        
+
                         <a href="<?php echo base_url('user/edit/'. $riz->UserID)?>" class="btn btn-warning my-1"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
 
                         <?php if ($riz->id_level != 1) { ?>
-                         <a href="<?php echo base_url('user/delete/' . $riz->UserID) ?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
-                      <?php } ?>
-                   </td>
-                </tr>
-             <?php } ?>
-          </tbody>
+                           <a href="<?php echo base_url('user/reset_password/'. $riz->UserID)?>" class="btn btn-gray my-1"><i class="fa-regular fa-key"></i></a>
+                           
+                           <a href="<?php echo base_url('user/delete/' . $riz->UserID) ?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
+                        <?php } ?>
+                     </td>
+                  </tr>
+               <?php } ?>
+            </tbody>
               <!--  <tfoot>
                   <tr>
                      <th>No.</th>

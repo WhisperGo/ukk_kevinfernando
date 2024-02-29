@@ -6,6 +6,10 @@
                <div class="header-title">
                   <h4 class="card-title"><?=$subtitle?></h4>
                   <small class="text-danger text-sm">* Data yang Wajib Diisi</small>
+                  <?php if (session()->has('error')): ?>
+                  <div class="alert alert-danger d-flex align-items-center mt-2" role="alert"><i class="faj-button fa-regular fa-circle-exclamation"></i>
+                     <?= session('error') ?></div>
+                  <?php endif; ?>
                </div>
             </div>
             <div class="card-body">
@@ -25,50 +29,50 @@
 
                         <div class="form-group">
                            <label for="password" class="form-label" style="flex: 1;">Password <small class="text-danger text-sm">*</small></label>
-                            <div style="position: relative; flex: 1;">
+                           <div style="position: relative; flex: 1;">
                               <input type="password" class="form-control" id="password-input" placeholder="Masukkan Password" name="password" required>
                               <button type="button" class="btn btn-outline-primary" id="show-password-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%);">
-                                <i class="fa-solid fa-eye"></i>
-                             </button>
-                          </div>
-                        </div>
+                               <i class="fa-solid fa-eye"></i>
+                            </button>
+                         </div>
+                      </div>
 
-                        <div class="form-group">
-                           <label class="form-label" for="fname">Email <small class="text-danger text-sm">*</small></label>
-                           <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email" required>
-                        </div>
-
-                        <div class="form-group">
-                           <label class="form-label" for="fname">Nama Lengkap <small class="text-danger text-sm">*</small></label>
-                           <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap" required>
-                        </div>
-
-                        <div class="form-group">
-                           <label class="form-label" for="fname">Alamat <small class="text-danger text-sm">*</small></label>
-                           <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat" required>
-                        </div>
-
-                        <div class="form-group">
-                           <label class="form-label" for="fname">Level <small class="text-danger text-sm">*</small></label>
-                           <select class="form-select" id="level" name="level" required>
-                              <option>- Pilih -</option>
-                              <?php 
-                              foreach ($level as $l) {
-                                 ?>
-                                 <option value="<?=$l->id_level?>"><?= $l->nama_level?></option>
-                              <?php } ?>
-                           </select>
-                        </div>
-
+                      <div class="form-group">
+                        <label class="form-label" for="fname">Email <small class="text-danger text-sm">*</small></label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email" required>
                      </div>
-                     <a href="javascript:history.back()" class="btn btn-danger mt-4">Cancel</a>
-                     <button type="submit" class="btn btn-primary mt-4">Submit</button>
-                  </form>
-               </div>
+
+                     <div class="form-group">
+                        <label class="form-label" for="fname">Nama Lengkap <small class="text-danger text-sm">*</small></label>
+                        <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap" required>
+                     </div>
+
+                     <div class="form-group">
+                        <label class="form-label" for="fname">Alamat <small class="text-danger text-sm">*</small></label>
+                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat" required>
+                     </div>
+
+                     <div class="form-group">
+                        <label class="form-label" for="fname">Level <small class="text-danger text-sm">*</small></label>
+                        <select class="form-select" id="level" name="level" required>
+                           <option>- Pilih -</option>
+                           <?php 
+                           foreach ($level as $l) {
+                              ?>
+                              <option value="<?=$l->id_level?>"><?= $l->nama_level?></option>
+                           <?php } ?>
+                        </select>
+                     </div>
+
+                  </div>
+                  <a href="javascript:history.back()" class="btn btn-danger mt-4">Cancel</a>
+                  <button type="submit" class="btn btn-primary mt-4">Submit</button>
+               </form>
             </div>
          </div>
       </div>
    </div>
+</div>
 </div>
 
 <script>

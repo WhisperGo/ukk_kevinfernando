@@ -69,6 +69,25 @@ class User extends BaseController
                 $imageName = 'default.png';
             }
 
+            // Validasi Register
+            if ($a == $d) {
+                session()->setFlashdata('error', 'Username dan Nama Lengkap tidak boleh sama.');
+                return redirect()->to('user/create');
+            }
+
+            $model = new M_user();
+            $user_exists = $model->where('Username', $a)->first();
+            if ($user_exists) {
+                session()->setFlashdata('error', 'Username sudah tidak tersedia.');
+                return redirect()->to('user/create');
+            }
+
+            $email_exists = $model->where('Email', $c)->first();
+            if ($email_exists) {
+                session()->setFlashdata('error', 'Email ini sudah pernah terdaftar.');
+                return redirect()->to('user/create');
+            }
+
             // Data yang akan disimpan
             $data1 = array(
                 'Username' => $a,
@@ -170,24 +189,65 @@ class User extends BaseController
         }
     }
 
-    // public function reset_password($id)
-    // {
-    //     if(session()->get('level')== 1) {
-    //         $model=new M_user();
-    //         $where=array('UserID'=>$id);
-    //         $user=array('password'=>md5('12345'));
-    //         $model->qedit('user', $user, $where);
+    public function reset_password($id)
+    {
+        if(session()->get('level')== 1) {
+            $model=new M_user();
+            $where=array('UserID'=>$id);
+            $user=array('password'=>md5('12345'));
+            $model->qedit('user', $user, $where);
 
-    //         echo view('agendapkl/partial/header_datatable');
-    //         echo view('agendapkl/partial/side_menu');
-    //         echo view('agendapkl/partial/top_menu');
-    //         echo view('agendapkl/partial/footer');
+            return redirect()->to('user');
+        }else {
+            return redirect()->to('/');
 
-    //         return redirect()->to('agendapkl/user');
-    //     }else {
-    //         return redirect()->to('/');
+        }
+    }
 
-    //     }
-    // }
+    public function reset_password_user($id)
+    {
+        if(session()->get('level')== 3) {
+            $model = new M_user();
+            $data['title']='Reset Password';
+            $data['desc']='Anda akan dapat Mereset Password di Menu ini.'; 
+            $data['subtitle'] = 'Form Reset Password';
+
+            $where=array('UserID'=>$id);
+            $data['jojo']=$model->getWhere('user',$where);
+
+            echo view('hopeui/partial/header', $data);
+            echo view('hopeui/partial/side_menu');
+            echo view('hopeui/partial/top_menu');
+            echo view('hopeui/user/reset_password', $data);
+            echo view('hopeui/partial/footer');
+        }else {
+            return redirect()->to('/');
+
+        }
+    }
+
+    public function aksi_reset_password_user()
+    {
+        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3) {
+            $a = $this->request->getPost('password');
+            $id = $this->request->getPost('id');
+
+            // Data yang akan disimpan
+            $data1 = array(
+                'Password' => md5($a),
+                'updated_at'=>date('Y-m-d H:i:s')
+            );
+
+            // Simpan data ke dalam database
+            $model = new M_user();
+            $where=array('UserID'=>$id);
+            $model->qedit('user', $data1, $where);
+
+            session()->destroy();
+            return redirect()->to('/');
+        } else {
+            return redirect()->to('/');
+        }
+    }
 
 }

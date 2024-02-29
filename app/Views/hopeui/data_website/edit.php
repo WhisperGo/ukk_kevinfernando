@@ -17,7 +17,7 @@
 
 								<div class="col-md-12">
 									<div class="mb-3">
-										<label for="logo_website" class="form-label">Logo Website</label>
+										<label for="logo_website" class="form-label">Logo Website <small class="text-danger text-sm">*</small></label>
 										<div class="mb-3">
 											<div class="custom-file">
 												<div class="col-12 col-md-12">
@@ -33,8 +33,8 @@
 										</div>
 									</div>
 
-									<div class="mb-3">
-										<label for="logo_pdf" class="form-label">Logo PDF</label>
+									<!-- <div class="mb-3">
+										<label for="logo_pdf" class="form-label">Logo PDF <small class="text-danger text-sm">*</small></label>
 										<div class="mb-3">
 											<div class="custom-file">
 												<div class="col-12 col-md-12">
@@ -48,10 +48,10 @@
 												<img src="<?=base_url('logo/logo_pdf/'. $jojo->logo_pdf)?>" width="15%">
 											<?php endif; ?>
 										</div>
-									</div>
+									</div> -->
 
 									<div class="mb-3">
-										<label for="favicon" class="form-label">Favicon Website</label>
+										<label for="favicon" class="form-label">Favicon Website <small class="text-danger text-sm">*</small></label>
 										<div class="mb-3">
 											<div class="custom-file">
 												<div class="col-12 col-md-12">
@@ -68,12 +68,11 @@
 									</div>
 
 									<div class="mb-3">
-										<label for="nama_website" class="form-label">Nama Website</label>
+										<label for="nama_website" class="form-label">Nama Website <small class="text-danger text-sm">*</small></label>
 										<input type="text" class="form-control" id="nama_website" placeholder="Masukkan Nama Website" name="nama_website" value="<?php echo $jojo->nama_website ?>" required>
 									</div>
 
-								</div>
-							</div>
+
 							<a href="javascript:history.back()" class="btn btn-danger mt-4">Cancel</a>
 							<button type="submit" class="btn btn-primary mt-4">Submit</button>
 						</form>

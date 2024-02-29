@@ -59,8 +59,8 @@ $logo = $builder->select('*')
 </head>
 <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
   <!-- loader Start -->
-  <div id="loading">
+  <!-- <div id="loading">
     <div class="loader simple-loader">
       <div class="loader-body"></div>
-    </div>    </div>
+    </div>    </div> -->
     <!-- loader END -->

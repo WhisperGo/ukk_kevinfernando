@@ -49,31 +49,37 @@ class M_koleksipribadi extends Model
 
 	public function isLiked($idBuku, $idUser)
 	{
-		return $this->db->table('koleksi_buku')
-		->where(['buku' => $idBuku, 'user' => $idUser])
+		return $this->db->table('koleksipribadi')
+		->where(['BukuID' => $idBuku, 'UserID' => $idUser])
 		->countAllResults() > 0;
 	}
 
 	public function hapusLike($idBuku, $idUser)
 	{
-		return $this->db->table('koleksi_buku')
-		->where(['buku' => $idBuku, 'user' => $idUser])
+		return $this->db->table('koleksipribadi')
+		->where(['BukuID' => $idBuku, 'UserID' => $idUser])
 		->delete();
 	}
 
 	public function tampilKoleksiBukuByIdUser($idUser)
 	{
-		return $this->db->table('koleksi_buku')
-		->select('koleksi_buku.*, buku.*, kategori_buku.*')
-		->join('buku', 'buku.id_buku = koleksi_buku.buku')
-		->join('kategori_buku', 'kategori_buku.id_kategori = buku.kategori_buku')
-		->where('koleksi_buku.user', $idUser)
-		->where('koleksi_buku.deleted_at', null)
-		->orderBy('koleksi_buku.created_at', 'DESC')
-		->get()
-		->getResult();
-	}
+		$builder = $this->db->table('koleksipribadi');
+		$builder->select('koleksipribadi.*, buku.*, kategoribuku_relasi.*, kategoribuku.*');
+		$builder->join('buku', 'buku.BukuID = koleksipribadi.BukuID');
+		$builder->join('kategoribuku_relasi', 'buku.BukuID = kategoribuku_relasi.BukuID');
+		$builder->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID');
+		$builder->where('koleksipribadi.UserID', $idUser);
+		$builder->where('koleksipribadi.deleted_at', null);
 
+		$results = $builder->get()->getResult();
+
+    // Tambahkan properti isLiked ke setiap buku dalam koleksi
+		foreach ($results as $result) {
+			$result->isLiked = $this->isLiked($result->BukuID, $idUser);
+		}
+
+		return $results;
+	}
 
 	//CI4 Model
 	public function deletee($id)

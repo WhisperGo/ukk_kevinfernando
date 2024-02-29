@@ -1,0 +1,202 @@
+CRITICAL - 2024-02-29 07:57:49 --> Too few arguments to function App\Controllers\Peminjaman::create(), 0 passed in C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->create()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+CRITICAL - 2024-02-29 07:58:02 --> Call to undefined method App\Models\M_buku::join3id
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(89): CodeIgniter\Model->__call('join3id', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->detail_buku('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-29 08:00:31 --> Call to undefined method App\Models\M_buku::join3id
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(89): CodeIgniter\Model->__call('join3id', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->detail_buku('2')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-29 08:02:56 --> syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman_peminjam.php(30): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman_peminjam->index()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman_peminjam))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 08:47:46 --> Invalid file: hopeui/peminjaman/create.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/peminjam...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(54): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->create('1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 08:48:04 --> Invalid file: hopeui/peminjaman/create.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/peminjam...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(54): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->create('1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 08:49:23 --> Invalid file: hopeui/peminjaman/create.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/peminjam...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(54): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->create('1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 08:49:35 --> Invalid file: hopeui/peminjaman/create.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/peminjam...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman_peminjam.php(53): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman_peminjam->create('1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman_peminjam))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+ERROR - 2024-02-29 08:50:06 --> Column 'BukuID' cannot be null
+CRITICAL - 2024-02-29 08:53:20 --> syntax error, unexpected '<'
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('peminjaman_pemi...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('peminjaman_pemi...')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+ERROR - 2024-02-29 09:04:14 --> Unknown column 'durasi_hari' in 'field list'
+CRITICAL - 2024-02-29 09:04:14 --> Call to a member function getRow() on bool
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman_peminjam.php(70): App\Models\M_durasi_peminjaman->getDurasiPeminjaman()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman_peminjam->aksi_create()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman_peminjam))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-29 09:12:21 --> Cannot redeclare App\Controllers\Peminjaman_peminjam::aksi_create()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-02-29 09:42:04 --> Invalid file: hopeui/peminjaman/create.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/peminjam...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(54): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->create('1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 09:42:17 --> Invalid file: hopeui/peminjaman/create.php
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hopeui/peminjam...')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/peminjam...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Peminjaman.php(54): view('hopeui/peminjam...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Peminjaman->create('1')
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 09:58:50 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('peminjaman')
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('peminjaman')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-29 10:07:14 --> Call to undefined method App\Models\M_buku::join3id
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(89): CodeIgniter\Model->__call('join3id', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->detail_buku('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}
+CRITICAL - 2024-02-29 10:27:14 --> Call to a member function getSegment() on null
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(210): include()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(31): view('hopeui/partial/...', Array)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#9 {main}
+CRITICAL - 2024-02-29 10:31:22 --> Call to a member function tampil() on null
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\User->reset_password_user()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+CRITICAL - 2024-02-29 10:31:57 --> Too few arguments to function App\Controllers\User::reset_password_user(), 0 passed in C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\User->reset_password_user()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+CRITICAL - 2024-02-29 10:32:36 --> Too few arguments to function App\Controllers\User::reset_password_user(), 0 passed in C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\User->reset_password_user()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}
+CRITICAL - 2024-02-29 10:32:37 --> syntax error, unexpected '<'
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(31): view('hopeui/partial/...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 10:32:38 --> syntax error, unexpected '<'
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(31): view('hopeui/partial/...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 10:32:47 --> syntax error, unexpected '?>', expecting ')'
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Common.php(1089): CodeIgniter\View\View->render('hopeui/partial/...', Array, true)
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Dashboard.php(31): view('hopeui/partial/...', Array)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#8 {main}
+CRITICAL - 2024-02-29 10:36:27 --> Cannot redeclare App\Controllers\User::aksi_edit()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-02-29 10:37:01 --> Call to a member function isValid() on null
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Register->aksi_register()
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#5 {main}

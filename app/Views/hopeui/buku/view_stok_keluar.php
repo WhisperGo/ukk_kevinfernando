@@ -2,10 +2,10 @@
    <div class="row">
       <div class="col-sm-12">
          <div class="card">
-
             <div class="card-header d-flex justify-content-between">
                <div class="header-title">
-                  <a href="<?php echo base_url('buku/add_stok_keluar/' . $jojo2)?>" class="btn btn-success my-1"><i class="faj-button fa-regular fa-plus" style="color: #ffffff;"></i>Tambah</a>
+                  <a href="<?php echo base_url('buku/menu_stok/' . $jojo2)?>" class="btn btn-gray my-1"><i class="faj-button fa-regular fa-box-archive"></i>Menu Stok</a>
+                  <a href="<?php echo base_url('buku/add_stok_keluar/' . $jojo2)?>" class="btn btn-primary my-1"><i class="faj-button fa-regular fa-plus"></i>Tambah</a>
                </div>
             </div>
 
@@ -15,8 +15,9 @@
                      <thead>
                         <tr>
                            <th>No.</th>
-                           <th>Judul Buku</th>
-                           <th>Stok Buku Keluar</th>
+                           <th>Judul</th>
+                           <th>Stok Keluar</th>
+                           <th>Deskripsi</th>
                            <th>Tanggal Keluar</th>
                            <th>Action</th>
                         </tr>
@@ -29,13 +30,14 @@
                          ?>
                          <tr>
                           <td><?= $no++ ?></td>
-                          <td><?= $riz->judul_buku ?></td>
-                          <td><?= $riz->stok_buku_keluar ?></td>
+                          <td><?= $riz->Judul ?></td>
+                          <td><?= $riz->stok_buku_keluar ?> buah</td>
+                          <td><?= $riz->deskripsi ?></td>
                           <td><?= date('d M Y', strtotime($riz->created_at)) ?></td>
 
                           <td>
 
-                           <a href="<?php echo base_url('buku/delete_stok_keluar/'. $riz->id_buku_keluar)?>" class="btn btn-danger my-1"><i class="fa-regular fa-minus" style="color: #ffffff;"></i></a>
+                           <a href="<?php echo base_url('buku/delete_stok_keluar/'. $riz->id_buku_keluar) ?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
                         </td>
                      </tr>
                   <?php } ?>

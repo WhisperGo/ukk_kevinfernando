@@ -44,7 +44,7 @@
 								<div id="preview"></div>
 							</div>
 
-							<div class="mb-3">
+							<!-- <div class="mb-3">
 								<label for="logo_pdf" class="form-label">Logo PDF Perusahaan</label>
 								<div class="mb-3">
 									<div class="custom-file">
@@ -54,7 +54,7 @@
 									</div>
 								</div>
 								<div id="preview"></div>
-							</div>
+							</div> -->
 
 							<div class="mb-3">
 								<label for="favicon" class="form-label">Favicon Perusahaan</label>

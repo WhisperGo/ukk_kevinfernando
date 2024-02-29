@@ -62,20 +62,22 @@ class M_ulasanbuku extends Model
 	{
         // Ambil data gambar berdasarkan id_album
 		return $this->db->table('buku')
-		->where('id_buku', $id)
+		->where('BukuID', $id)
 		->get()
 		->getResult();
 	}
 
 	public function getUlasanByIdBuku($id)
 	{
-		return $this->db->table('ulasan_buku')
-		->select('ulasan_buku.*, buku.*, user.*')
-		->join('buku', 'ulasan_buku.buku = buku.id_buku')
-		->join('user', 'ulasan_buku.user = user.UserID')
-		->where('ulasan_buku.buku', $id)
-		->where('ulasan_buku.deleted_at', null)
-		->orderBy('ulasan_buku.created_at', 'DESC')
+		return $this->db->table('ulasanbuku')
+		->select('ulasanbuku.*, buku.*, user.*, rating.*')
+		->select('ulasanbuku.created_at AS created_at_ulasan') 
+		->join('buku', 'ulasanbuku.BukuID = buku.BukuID')
+		->join('user', 'ulasanbuku.UserID = user.UserID')
+		->join('rating', 'ulasanbuku.Rating = rating.id_rating')
+		->where('ulasanbuku.BukuID', $id)
+		->where('ulasanbuku.deleted_at', null)
+		->orderBy('ulasanbuku.created_at', 'DESC')
 		->get()
 		->getResult();
 	}

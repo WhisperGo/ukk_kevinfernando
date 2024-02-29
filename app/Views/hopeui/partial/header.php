@@ -59,6 +59,9 @@ $logo = $builder->select('*')
   <link rel="stylesheet" href="<?=base_url('assets/extensions/filepond/filepond.css')?>" />
   <link rel="stylesheet" href="<?=base_url('assets/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.css')?>"
   />
+
+  <!-- Rating JS -->
+  <!-- <script src="<?=base_url('assets/extensions/rater-js/rater.js')?>" charset="utf-8"></script> -->
   
 </head>
 

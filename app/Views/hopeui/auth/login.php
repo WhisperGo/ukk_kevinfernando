@@ -38,41 +38,48 @@ $logo = $builder->select('logo_website')
 
                       <?php if (session()->has('error')): ?>
                       <div class="alert alert-danger d-flex align-items-center" role="alert"><i class="faj-button fa-regular fa-circle-exclamation"></i>
-                        <?= session('error') ?></div>
-                     <?php endif; ?>
+                       <?= session('error') ?>
+                    </div>
+                 <?php endif; ?>
 
-                     <form action="<?= base_url('login/aksi_login')?>" method="post">
-                        <div class="row">
-                           <div class="col-lg-12">
-                              <div class="form-group">
-                                 <label for="text" class="form-label">Username</label>
-                                 <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan Username">
-                              </div>
-                           </div>
+                 <?php if (session()->has('success')): ?>
+                 <div class="alert alert-success d-flex align-items-center" role="alert"><i class="faj-button fa-regular fa-check-circle"></i>
+                    <?= session('success') ?>
+                 </div>
+              <?php endif; ?>
 
-                           <div class="col-lg-12">
-                            <div class="form-group">
-                             <label for="password" class="form-label" style="flex: 1;">Password</label>
-                             <div style="position: relative; flex: 1;">
-                              <input type="password" class="form-control" id="password-input" placeholder="Masukkan Password" name="password">
-                              <button type="button" class="btn btn-outline-primary" id="show-password-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%);">
-                               <i class="fa-solid fa-eye"></i>
-                            </button>
-                         </div>
-                      </div>
-                   </div>
-
-                   <div class="col-lg-12 d-flex justify-content-between">
-                     <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Remember Me</label>
+              <form action="<?= base_url('login/aksi_login')?>" method="post">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label for="text" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan Username">
                      </div>
-                     <!-- <a href="recoverpw.html">Forgot Password?</a> -->
                   </div>
-               </div>
-               <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary">Sign In</button>
-               </div>
+
+                  <div class="col-lg-12">
+                   <div class="form-group">
+                    <label for="password" class="form-label" style="flex: 1;">Password</label>
+                    <div style="position: relative; flex: 1;">
+                     <input type="password" class="form-control" id="password-input" placeholder="Masukkan Password" name="password">
+                     <button type="button" class="btn btn-outline-primary" id="show-password-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%);">
+                      <i class="fa-solid fa-eye"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+
+          <div class="col-lg-12 d-flex justify-content-between">
+            <div class="form-check mb-3">
+               <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+               <label class="form-check-label" for="flexCheckDefault">Remember Me</label>
+            </div>
+            <!-- <a href="recoverpw.html">Forgot Password?</a> -->
+         </div>
+      </div>
+      <div class="d-flex justify-content-center">
+         <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
                      <!-- <p class="text-center my-3">or sign in with other accounts?</p>
                      <div class="d-flex justify-content-center">
                         <ul class="list-group list-group-horizontal list-group-flush">

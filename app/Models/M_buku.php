@@ -46,33 +46,95 @@ class M_buku extends Model
         ->getResult();
     }
     public function join2digital($table1, $table2, $on)
-	{
-		return $this->db->table($table1)
-		->join($table2, $on, 'left')
-		->where("$table1.deleted_at", null)
-		->where("$table2.deleted_at", null)
+    {
+    	return $this->db->table($table1)
+    	->join($table2, $on, 'left')
+    	->where("$table1.deleted_at", null)
+    	->where("$table2.deleted_at", null)
         ->where("buku.kategori_buku =", 10) // Menambahkan kondisi kategori_buku != 10
         ->get()
         ->getResult();
     }
     public function join3($table1, $table2, $table3, $on, $on2)
-	{
-		return $this->db->table($table1)
-		->join($table2, $on, 'left')
-		->join($table3, $on2, 'left')
-		->where("$table1.deleted_at", null)
-		->where("$table2.deleted_at", null)
-		->where("$table3.deleted_at", null)
+    {
+    	return $this->db->table($table1)
+    	->join($table2, $on, 'left')
+    	->join($table3, $on2, 'left')
+    	->where("$table1.deleted_at", null)
+    	->where("$table2.deleted_at", null)
+    	->where("$table3.deleted_at", null)
+    	->get()
+    	->getResult();
+    }
+    public function join4($table1, $table2, $table3, $table4, $on, $on2, $on3)
+    {
+    	return $this->db->table($table1)
+    	->join($table2, $on, 'left')
+    	->join($table3, $on2, 'left')
+    	->join($table4, $on3, 'left')
+    	->where("$table1.deleted_at", null)
+    	->where("$table2.deleted_at", null)
+    	->where("$table3.deleted_at", null)
+    	->where("$table4.deleted_at", null)
+    	->orderBy('peminjaman.StatusPeminjaman', 'ASC')
+    	->orderBy('peminjaman.created_at', 'DESC')
+    	->get()
+    	->getResult();
+    }
+    public function join4biasa()
+    {
+        return $this->db->table('peminjaman')
+        ->select('peminjaman.*, buku.*, kategoribuku_relasi.*, kategoribuku.*')
+        ->select('peminjaman.stok_buku AS stok_buku_peminjaman') 
+        ->join('buku', 'peminjaman.BukuID = buku.BukuID', 'left')
+        ->join('kategoribuku_relasi', 'buku.BukuID = kategoribuku_relasi.BukuID', 'left')
+        ->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID', 'left')
+        ->where('peminjaman.deleted_at', null)
+        ->where('buku.deleted_at', null)
+        ->where('kategoribuku_relasi.deleted_at', null)
+        ->where('kategoribuku.deleted_at', null)
+        ->orderBy('peminjaman.StatusPeminjaman', 'ASC')
+        ->orderBy('peminjaman.created_at', 'DESC')
+        ->get()
+        ->getResult();
+    }
+    public function join4user($idUser)
+    {
+        return $this->db->table('peminjaman')
+        ->select('peminjaman.*, buku.*, kategoribuku_relasi.*, kategoribuku.*')
+        ->select('peminjaman.stok_buku AS stok_buku_peminjaman') 
+        ->join('buku', 'peminjaman.BukuID = buku.BukuID', 'left')
+        ->join('kategoribuku_relasi', 'buku.BukuID = kategoribuku_relasi.BukuID', 'left')
+        ->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID', 'left')
+        ->where('peminjaman.deleted_at', null)
+        ->where('buku.deleted_at', null)
+        ->where('kategoribuku_relasi.deleted_at', null)
+        ->where('kategoribuku.deleted_at', null)
+        ->where('peminjaman.UserID', $idUser)
+        ->orderBy('peminjaman.StatusPeminjaman', 'ASC')
+        ->orderBy('peminjaman.created_at', 'DESC')
         ->get()
         ->getResult();
     }
 
+
+
+
     public function hitungsemua()
-	{
-		return $this->where('deleted_at', null)->countAllResults();
-	}
+    {
+    	return $this->where('deleted_at', null)->countAllResults();
+    }
 
-
+    public function getBooksByCategory($kategoriID)
+    {
+    	$builder = $this->db->table('buku');
+    	$builder->select('buku.*, kategoribuku.NamaKategori');
+    	$builder->join('kategoribuku_relasi', 'buku.BukuID = kategoribuku_relasi.BukuID');
+    	$builder->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID');
+    	$builder->where('kategoribuku_relasi.KategoriID', $kategoriID);
+    	$query = $builder->get();
+    	return $query->getResult();
+    }
 
 	// ----------------------------------- STOK BUKU MASUK -------------------------------------
 
@@ -104,8 +166,8 @@ class M_buku extends Model
     {
     	return $this->db->table('buku_keluar')
     	->select('buku_keluar.*, buku.*') 
-    	->join('buku', 'buku.id_buku = buku_keluar.buku')
-    	->where('buku.id_buku', $id)
+    	->join('buku', 'buku.BukuID = buku_keluar.buku_id')
+    	->where('buku.BukuID', $id)
     	->get()
     	->getResult();
     }
@@ -126,26 +188,27 @@ class M_buku extends Model
 
     public function isLiked($idBuku, $idUser)
     {
-    	return $this->db->table('koleksi_buku')
-    	->where(['buku' => $idBuku, 'user' => $idUser])
+    	return $this->db->table('koleksipribadi')
+    	->where(['BukuID' => $idBuku, 'UserID' => $idUser])
     	->countAllResults() > 0;
     }
 
     public function hapusLike($idBuku, $idUser)
     {
-    	return $this->db->table('koleksi_buku')
-    	->where(['buku' => $idBuku, 'user' => $idUser])
+    	return $this->db->table('koleksipribadi')
+    	->where(['BukuID' => $idBuku, 'UserID' => $idUser])
     	->delete();
     }
 
     public function isLikedByIdUser($idUser)
     {
-    	return $this->db->table('koleksi_buku')
-    	->select('koleksi_buku.*, buku.*, kategori_buku.*')
-    	->join('buku', 'buku.id_buku = koleksi_buku.buku')
-    	->join('kategori_buku', 'kategori_buku.id_kategori = buku.kategori_buku')
-    	->where('koleksi_buku.user', $idUser)
-    	->where('koleksi_buku.deleted_at', null)
+    	return $this->db->table('koleksipribadi')
+    	->select('koleksipribadi.*, buku.*, kategoribuku_relasi.*, kategoribuku.*')
+    	->join('buku', 'buku.BukuID = koleksipribadi.BukuID')
+    	->join('kategoribuku_relasi', 'buku.BukuID = kategoribuku_relasi.BukuID')
+    	->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID')
+    	->where('koleksipribadi.UserID', $idUser)
+    	->where('koleksipribadi.deleted_at', null)
     	->get()
     	->getResult();
     }
