@@ -455,7 +455,7 @@ class Buku extends BaseController
 
     public function delete_stok_keluar($id)
     { 
-       if (session()->get('level') == 1 || session()->get('level') == 2) {
+     if (session()->get('level') == 1 || session()->get('level') == 2) {
         $model = new M_buku();
 
         // Mengambil ID buku terkait dari stok buku masuk yang akan dihapus

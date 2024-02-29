@@ -97,6 +97,11 @@ $logo = $builder->select('logo_website')
               </a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link <?php if($uri->getSegment(1) == "log_activity"){echo "active";}?>" href="<?=base_url('log_activity')?>"><i class="fa-solid fa-history"></i><span class="item-name">Log Activity</span>
+              </a>
+            </li>
+
             <li><hr class="hr-horizontal"></li>
             <li class="nav-item static-item">
               <a class="nav-link static-item disabled" tabindex="-1">
@@ -144,9 +149,9 @@ $logo = $builder->select('logo_website')
           </li>
 
           <li class="nav-item">
-          <a class="nav-link <?php if($uri->getSegment(1) == "pengembalian"){echo "active";}?>" href="<?=base_url('pengembalian/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Pengembalian</span>
-          </a>
-        </li>
+            <a class="nav-link <?php if($uri->getSegment(1) == "pengembalian"){echo "active";}?>" href="<?=base_url('pengembalian/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Pengembalian</span>
+            </a>
+          </li>
 
           <li class="nav-item mb-5"></li>
 

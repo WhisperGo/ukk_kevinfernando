@@ -63,6 +63,7 @@ class M_buku extends Model
     	->where("$table1.deleted_at", null)
     	->where("$table2.deleted_at", null)
     	->where("$table3.deleted_at", null)
+        ->where('buku.stok_buku !=', 0)
     	->get()
     	->getResult();
     }
@@ -117,9 +118,6 @@ class M_buku extends Model
         ->getResult();
     }
 
-
-
-
     public function hitungsemua()
     {
     	return $this->where('deleted_at', null)->countAllResults();
@@ -132,8 +130,9 @@ class M_buku extends Model
     	$builder->join('kategoribuku_relasi', 'buku.BukuID = kategoribuku_relasi.BukuID');
     	$builder->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID');
     	$builder->where('kategoribuku_relasi.KategoriID', $kategoriID);
-    	$query = $builder->get();
-    	return $query->getResult();
+        $builder->where('buku.stok_buku !=', 0);
+        $query = $builder->get();
+        return $query->getResult();
     }
 
 	// ----------------------------------- STOK BUKU MASUK -------------------------------------

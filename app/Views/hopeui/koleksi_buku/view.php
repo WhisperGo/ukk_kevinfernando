@@ -32,7 +32,7 @@
                           <td><?= $no++ ?></td>
                           <td>
                             <a href="<?= base_url('buku/detail_buku/' . $riz->BukuID) ?>">
-                              <img src="<?= base_url('cover/' . $riz->cover_buku) ?>" class="img-fluid" style="object-fit: cover; width: 95px; height: 140px;" alt="Cover Buku">
+                              <img src="<?= base_url('cover/' . $riz->cover_buku) ?>" style="object-fit: cover; width: 95px; height: 140px;" alt="Cover Buku">
                            </a>
                         </td>
                         <td><?= $riz->Judul ?></td>
