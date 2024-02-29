@@ -121,7 +121,7 @@ public function export_windows()
         $awal = $this->request->getPost('awal');
         $akhir = $this->request->getPost('akhir');
 
-            // Get data absensi kantor berdasarkan filter
+        // Get data absensi kantor berdasarkan filter
         $data['peminjaman'] = $model->getAllPeminjamanInRange($awal, $akhir);
 
         $data['awal'] = $awal;
@@ -310,7 +310,7 @@ public function export_windows_per_hari()
         $data['peminjaman'] = $model->getAllPeminjamanPerHari($tanggal);
         $data['tanggal'] = $tanggal;
 
-        $data['title'] = 'Laporan Transaksi';
+        $data['title'] = 'Data Peminjaman';
         echo view('hopeui/partial/header', $data);
         echo view('hopeui/laporan_peminjaman/print_windows_view', $data);
         echo view('hopeui/partial/footer_print');

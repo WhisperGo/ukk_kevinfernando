@@ -85,10 +85,10 @@ $logo = $builder->select('*')
     <h3 class="text-center mb-4"><?= $title ?></h3>
     
     <?php if ($awal && $akhir) : ?>
-        <p class="text-center">Laporan detail transaksi dalam rentang tanggal berikut:</p>
+        <p class="text-center">Laporan peminjaman buku dalam rentang tanggal berikut:</p>
         <p class="text-center">Periode : <?= date('d M Y', strtotime($awal)) . ' - ' . date('d M Y', strtotime($akhir))?></p>
     <?php elseif ($tanggal) : ?>
-       <p class="text-center">Laporan detail transaksi pada tanggal berikut:</p>
+       <p class="text-center">Laporan peminjaman buku pada tanggal berikut:</p>
        <p class="text-center">Periode : <?= date('d M Y', strtotime($tanggal))?></p>
    <?php endif; ?>
 

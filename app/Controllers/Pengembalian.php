@@ -47,7 +47,7 @@ class Pengembalian extends BaseController
             $data['awal'] = $awal;
             $data['akhir'] = $akhir;
             
-            $data['title'] = 'Laporan Peminjaman';
+            $data['title'] = 'Laporan Pengembalian';
             echo view('hopeui/partial/header', $data);
             echo view('hopeui/laporan_pengembalian/print_windows_view', $data);
             echo view('hopeui/partial/footer_print');
@@ -74,7 +74,7 @@ class Pengembalian extends BaseController
             $dompdf = new Dompdf();
 
             // Set the HTML content for the PDF
-            $data['title'] = 'Laporan Peminjaman';
+            $data['title'] = 'Laporan Pengembalian';
             $dompdf->loadHtml(view('hopeui/laporan_peminjaman/print_pdf_view',$data));
             $dompdf->setPaper('A4','landscape');
             $dompdf->render();
@@ -230,7 +230,7 @@ public function export_windows_per_hari()
         $data['peminjaman'] = $model->getAllPengembalianPerHari($tanggal);
         $data['tanggal'] = $tanggal;
 
-        $data['title'] = 'Laporan Transaksi';
+        $data['title'] = 'Laporan Pengembalian';
         echo view('hopeui/partial/header', $data);
         echo view('hopeui/laporan_pengembalian/print_windows_view', $data);
         echo view('hopeui/partial/footer_print');
@@ -254,7 +254,7 @@ public function export_pdf_per_hari()
         $dompdf = new Dompdf();
 
             // Set the HTML content for the PDF
-        $data['title'] = 'Laporan Peminjaman';
+        $data['title'] = 'Laporan Pengembalian';
         $dompdf->loadHtml(view('hopeui/laporan_peminjaman/print_pdf_view',$data));
         $dompdf->setPaper('A4','landscape');
         $dompdf->render();
