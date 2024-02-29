@@ -113,7 +113,7 @@ class M_peminjaman extends Model
 		->join('user', 'user.UserID = peminjaman.UserID')
 		->where('peminjaman.StatusPeminjaman =', 1)
 		->where('peminjaman.TanggalPeminjaman >=', $tanggal_awal)
-		->where('peminjaman.TanggalPengembalian <=', $tanggal_akhir)
+		->where('peminjaman.TanggalPeminjaman <=', $tanggal_akhir)
 		->where('peminjaman.deleted_at', null)
 		->orderBy('peminjaman.created_at', 'DESC')
 		->get()
