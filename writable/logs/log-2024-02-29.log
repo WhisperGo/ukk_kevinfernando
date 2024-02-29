@@ -368,3 +368,11 @@ CRITICAL - 2024-02-29 12:54:46 --> syntax error, unexpected '->' (T_OBJECT_OPERA
 #7 /Applications/XAMPP/xamppfiles/htdocs/ukk_kevinfernando/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #8 /Applications/XAMPP/xamppfiles/htdocs/ukk_kevinfernando/system/Commands/Server/rewrite.php(43): require_once('/Applications/X...')
 #9 {main}
+CRITICAL - 2024-02-29 13:12:15 --> Call to undefined method App\Models\M_buku::join3id
+#0 C:\Users\PC 31\Downloads\ukk_kevinfernando\app\Controllers\Buku.php(89): CodeIgniter\Model->__call('join3id', Array)
+#1 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(832): App\Controllers\Buku->detail_buku('1')
+#2 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#3 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\PC 31\Downloads\ukk_kevinfernando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\PC 31\Downloads\ukk_kevinfernando\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\PC 31\\...')
+#6 {main}

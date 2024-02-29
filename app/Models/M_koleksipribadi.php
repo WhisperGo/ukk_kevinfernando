@@ -70,6 +70,7 @@ class M_koleksipribadi extends Model
 		$builder->join('kategoribuku', 'kategoribuku_relasi.KategoriID = kategoribuku.KategoriID');
 		$builder->where('koleksipribadi.UserID', $idUser);
 		$builder->where('koleksipribadi.deleted_at', null);
+		$builder->where('buku.stok_buku !=', 0);
 
 		$results = $builder->get()->getResult();
 
