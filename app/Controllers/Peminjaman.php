@@ -33,11 +33,12 @@ class Peminjaman extends BaseController
 
     public function tidak_beri_izin($id)
     { 
-       if (session()->get('level') == 1 || session()->get('level') == 2) {
+     if (session()->get('level') == 1 || session()->get('level') == 2) {
 
             // Data yang akan disimpan
         $data1 = array(
             'StatusPeminjaman' => '4',
+            'updated_at'=>date('Y-m-d H:i:s')
         );
 
         $where = array('PeminjamanID' => $id);
@@ -58,6 +59,7 @@ public function beri_izin($id)
             // Data yang akan disimpan
         $data1 = array(
             'StatusPeminjaman' => '1',
+            'updated_at'=>date('Y-m-d H:i:s')
         );
 
         $where = array('PeminjamanID' => $id);
@@ -78,6 +80,7 @@ public function edit_status($id)
             // Data yang akan disimpan
         $data1 = array(
             'StatusPeminjaman' => '2',
+            'updated_at'=>date('Y-m-d H:i:s')
         );
 
         $where = array('PeminjamanID' => $id);

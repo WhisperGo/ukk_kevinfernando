@@ -206,7 +206,7 @@ class User extends BaseController
 
     public function reset_password_user($id)
     {
-        if(session()->get('level')== 3) {
+        if(session()->get('level')== 1 || session()->get('level')== 2 || session()->get('level')== 3) {
             $model = new M_user();
             $data['title']='Reset Password';
             $data['desc']='Anda akan dapat Mereset Password di Menu ini.'; 

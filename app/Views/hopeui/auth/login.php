@@ -1,12 +1,6 @@
 <?php
 
 $db = \Config\Database::connect();
-// $builder = $db->table('website');
-// $namaweb = $builder->select('nama_website')
-// ->where('deleted_at', null)
-// ->get()
-// ->getRow();
-
 $builder = $db->table('website');
 $logo = $builder->select('logo_website')
 ->where('deleted_at', null)

@@ -55,6 +55,7 @@ class M_buku extends Model
         ->get()
         ->getResult();
     }
+
     public function join3($table1, $table2, $table3, $on, $on2)
     {
     	return $this->db->table($table1)
@@ -66,6 +67,19 @@ class M_buku extends Model
         ->where('buku.stok_buku !=', 0)
     	->get()
     	->getResult();
+    }
+    public function join3id($table1, $table2, $table3, $on, $on2, $id)
+    {
+        return $this->db->table($table1)
+        ->join($table2, $on, 'left')
+        ->join($table3, $on2, 'left')
+        ->where("$table1.deleted_at", null)
+        ->where("$table2.deleted_at", null)
+        ->where("$table3.deleted_at", null)
+        ->where('buku.stok_buku !=', 0)
+        ->where('buku.BukuID', $id)
+        ->get()
+        ->getResult();
     }
     public function join4($table1, $table2, $table3, $table4, $on, $on2, $on3)
     {

@@ -197,11 +197,6 @@ $logo = $builder->select('logo_website')
           </a>
         </li>
 
-        <!-- <li class="nav-item">
-          <a class="nav-link <?php if($uri->getSegment(1) == "buku_digital"){echo "active";}?>" href="<?=base_url('buku_digital')?>"><i class="fa-regular fa-book"></i><span class="item-name">Data Buku Digital</span>
-          </a>
-        </li> -->
-
         <li class="nav-item">
           <a class="nav-link <?php if($uri->getSegment(1) == "peminjaman" && $uri->getSegment(2) !== "menu_laporan"){echo "active";}?>" href="<?=base_url('peminjaman')?>"><i class="fa-duotone fa-arrow-right-arrow-left"></i><span class="item-name">Data Peminjaman</span>
           </a>
@@ -216,12 +211,12 @@ $logo = $builder->select('logo_website')
         </li>
 
         <li class="nav-item">
-          <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan"){echo "active";}?>" href="<?=base_url('peminjaman/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Peminjaman</span>
+          <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan" && $uri->getSegment(1) !== "pengembalian"){echo "active";}?>" href="<?=base_url('peminjaman/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Peminjaman</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan"){echo "active";}?>" href="<?=base_url('peminjaman/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Pengembalian</span>
+          <a class="nav-link <?php if($uri->getSegment(2) == "menu_laporan" && $uri->getSegment(1) !== "peminjaman"){echo "active";}?>" href="<?=base_url('pengembalian/menu_laporan')?>"><i class="fa-light fa-file-invoice"></i><span class="item-name">Laporan Pengembalian</span>
           </a>
         </li>
 
